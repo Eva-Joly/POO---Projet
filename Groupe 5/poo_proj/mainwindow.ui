@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufenetre">
+    <property name="title">
+     <string>Fichiers</string>
+    </property>
+    <addaction name="actionsauvegarde_dans_un_fichier"/>
+    <addaction name="actionchargement_dans_un_fichier"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionSaisie_de_l_expression_par_l_op_rateur"/>
+    <addaction name="separator"/>
+    <addaction name="actionAffichage_de_l_expression_en_notation_classique"/>
+    <addaction name="actionAffichage_de_l_expression_en_notation_P_I"/>
+    <addaction name="actionAffichage_de_la_valeur_de_l_expression"/>
+    <addaction name="actionAffichage_graphique_en_2D"/>
+    <addaction name="actionAffichage_graphique_en_3D"/>
+   </widget>
+   <widget class="QMenu" name="menuOutils">
+    <property name="title">
+     <string>Outils</string>
+    </property>
+    <addaction name="actionSimplification_de_l_expression"/>
+   </widget>
+   <addaction name="menufenetre"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuOutils"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionsauvegarde_dans_un_fichier">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/save.png</normaloff>:/new/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarde dans un fichier</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionchargement_dans_un_fichier">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/open.png</normaloff>:/new/image/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chargement dans un fichier</string>
+   </property>
+  </action>
+  <action name="actionSaisie_de_l_expression_par_l_op_rateur">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/keyboard.png</normaloff>:/new/image/keyboard.png</iconset>
+   </property>
+   <property name="text">
+    <string>Saisie de l'expression par l'opérateur</string>
+   </property>
+  </action>
+  <action name="actionAffichage_de_l_expression_en_notation_classique">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/SI.png</normaloff>:/new/image/SI.png</iconset>
+   </property>
+   <property name="text">
+    <string>Affichage de l'expression en notation &quot;classique&quot;</string>
+   </property>
+  </action>
+  <action name="actionAffichage_de_l_expression_en_notation_P_I">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/zloty.png</normaloff>:/new/image/zloty.png</iconset>
+   </property>
+   <property name="text">
+    <string>Affichage de l'expression en notation P.I.</string>
+   </property>
+  </action>
+  <action name="actionAffichage_de_la_valeur_de_l_expression">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/calc.jpg</normaloff>:/new/image/calc.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Affichage de la valeur de l'expression</string>
+   </property>
+  </action>
+  <action name="actionAffichage_graphique_en_2D">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/2D.png</normaloff>:/new/image/2D.png</iconset>
+   </property>
+   <property name="text">
+    <string>Affichage graphique en 2D</string>
+   </property>
+  </action>
+  <action name="actionAffichage_graphique_en_3D">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/3d.png</normaloff>:/new/image/3d.png</iconset>
+   </property>
+   <property name="text">
+    <string>Affichage graphique en 3D</string>
+   </property>
+  </action>
+  <action name="actionSimplification_de_l_expression">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/new/image/fraction.png</normaloff>:/new/image/fraction.png</iconset>
+   </property>
+   <property name="text">
+    <string>Simplification de l'expression</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

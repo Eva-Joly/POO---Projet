@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/image">
+        <file>2D.png</file>
+        <file>3d.png</file>
+        <file>calc.jpg</file>
+        <file>egal.png</file>
+        <file>fraction.png</file>
+        <file>keyboard.png</file>
+        <file>open.png</file>
+        <file>save.png</file>
+        <file>SI.png</file>
+        <file>zloty.png</file>
+    </qresource>
+</RCC>
