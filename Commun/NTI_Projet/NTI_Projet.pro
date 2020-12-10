@@ -15,6 +15,7 @@ SOURCES += \
     expression.cpp \
     main.cpp \
     mainwindow.cpp \
+    multiplication.cpp \
     operateur.cpp \
     soustraction.cpp
 
@@ -24,6 +25,7 @@ HEADERS += \
     division.h \
     expression.h \
     mainwindow.h \
+    multiplication.h \
     operateur.h \
     soustraction.h
 

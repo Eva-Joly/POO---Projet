@@ -10,7 +10,8 @@ public :
     constante();
     constante(float x=0);
     float calculer();
-    void afficher(ostream &reference);
+    void afficherClassique(ostream &reference);
+    void afficherPolonaise(ostream &reference);
 
 protected:
     float _valeur;

@@ -25,10 +25,10 @@ int main(int argc, char *argv[])
 
 
     ostringstream os;
-    sous.afficher(os);
+    sous.afficherClassique(os);
     os<< "=" << sous.calculer();
     os << endl;
-    sous.afficher(os);
+    sous.afficherPolonaise(os);
 
     txt->setText(os.str().c_str());
     txt->show();

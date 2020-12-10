@@ -1,0 +1,10 @@
+debug/addition.o
+debug/constante.o
+debug/division.o
+debug/expression.o
+debug/main.o
+debug/mainwindow.o
+debug/multiplication.o
+debug/operateur.o
+debug/soustraction.o
+debug/moc_mainwindow.o

@@ -11,7 +11,11 @@ constante::constante(float x){
     _valeur = x;
 }
 
-void constante::afficher(ostream &reference){
+void constante::afficherClassique(ostream &reference){
+    reference<<endl;
+}
+
+void constante::afficherPolonaise(ostream &reference){
     reference<<endl;
 }
 

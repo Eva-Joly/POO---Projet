@@ -10,8 +10,8 @@ public:
     addition();
     addition(expression *x, expression *y);
     float calculer();
-    void afficher(ostream &reference);
-
+    void afficherClassique(ostream &reference);
+    void afficherPolonaise(ostream &reference);
 };
 
 #endif // ADDITION_H

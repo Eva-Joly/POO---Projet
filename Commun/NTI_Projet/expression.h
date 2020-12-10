@@ -10,6 +10,7 @@ class expression
 public:
     expression();
     virtual float calculer()=0;
-    virtual void afficher(ostream &reference)=0;
+    virtual void afficherClassique(ostream &reference)=0;
+    virtual void afficherPolonaise(ostream &reference)=0;
 };
 #endif // EXPRESSION_H

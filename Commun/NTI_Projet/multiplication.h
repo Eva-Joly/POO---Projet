@@ -10,7 +10,8 @@ public:
     multiplication();
     multiplication(expression *x, expression *y);
     float calculer();
-    void afficher(ostringstream &reference);
+    void afficherClassique(ostream &reference);
+    void afficherPolonaise(ostream &reference);
 };
 
 #endif // MULTIPLICATION_H
