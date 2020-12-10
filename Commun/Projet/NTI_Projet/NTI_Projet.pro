@@ -11,17 +11,21 @@ CONFIG += c++11
 SOURCES += \
     addition.cpp \
     constante.cpp \
+    division.cpp \
     expression.cpp \
     main.cpp \
     mainwindow.cpp \
-    operateur.cpp
+    operateur.cpp \
+    soustraction.cpp
 
 HEADERS += \
     addition.h \
     constante.h \
+    division.h \
     expression.h \
     mainwindow.h \
-    operateur.h
+    operateur.h \
+    soustraction.h
 
 FORMS += \
     mainwindow.ui

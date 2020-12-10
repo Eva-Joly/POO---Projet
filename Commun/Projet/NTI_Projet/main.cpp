@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "constante.h"
 #include "addition.h"
+#include "soustraction.h"
+#include "division.h"
 
 #include <QApplication>
 #include <sstream>
@@ -18,12 +20,15 @@ int main(int argc, char *argv[])
     constante c2(20);
 
     addition add(&c1, &c2);
+    soustraction sous(&c1, &c2);
+    division div(&c1, &c2);
+
 
     ostringstream os;
-    add.afficher(os);
-    os<< "=" << add.calculer();
+    sous.afficher(os);
+    os<< "=" << sous.calculer();
     os << endl;
-    add.afficher(os);
+    sous.afficher(os);
 
     txt->setText(os.str().c_str());
     txt->show();
