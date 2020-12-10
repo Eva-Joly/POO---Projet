@@ -31,5 +31,5 @@ void multiplication::afficherPolonaise(ostream &reference){
 
 float multiplication::calculer(){
 
-    return _opG->calculer() / _opD->calculer();
+    return _opG->calculer() * _opD->calculer();
 }
