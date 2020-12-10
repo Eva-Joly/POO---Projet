@@ -17,15 +17,16 @@ multiplication::multiplication(expression *x, expression *y){
 void multiplication::afficherClassique(ostream &reference){
 
     _opG->afficherClassique(reference);
-    reference<< "*" <<endl;
+    reference<< "*";
     _opD->afficherClassique(reference);
 }
 
 void multiplication::afficherPolonaise(ostream &reference){
 
     _opG->afficherClassique(reference);
+    reference<< " ";
     _opD->afficherClassique(reference);
-    reference<< "*" <<endl;
+    reference<< " *" <<endl;
 }
 
 float multiplication::calculer(){

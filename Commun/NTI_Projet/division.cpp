@@ -16,15 +16,16 @@ division::division(expression *x, expression *y){
 void division::afficherClassique(ostream &reference){
 
     _opG->afficherClassique(reference);
-    reference<< "/" <<endl;
+    reference<< "/";
     _opD->afficherClassique(reference);
 }
 
 void division::afficherPolonaise(ostream &reference){
 
     _opG->afficherClassique(reference);
+    reference<< " ";
     _opD->afficherClassique(reference);
-    reference<< "/" <<endl;
+    reference<< " /" <<endl;
 }
 
 float division::calculer(){

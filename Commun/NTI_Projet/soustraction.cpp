@@ -17,15 +17,16 @@ soustraction::soustraction(expression *x, expression *y){
 void soustraction::afficherClassique(ostream &reference){
 
     _opG->afficherClassique(reference);
-    reference<< "-" <<endl;
+    reference<< "-";
     _opD->afficherClassique(reference);
 }
 
 void soustraction::afficherPolonaise(ostream &reference){
 
     _opG->afficherClassique(reference);
+    reference<< " ";
     _opD->afficherClassique(reference);
-    reference<< "-" <<endl;
+    reference<< " -" <<endl;
 }
 
 float soustraction::calculer(){

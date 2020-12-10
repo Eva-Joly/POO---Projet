@@ -12,11 +12,11 @@ constante::constante(float x){
 }
 
 void constante::afficherClassique(ostream &reference){
-    reference<<endl;
+    reference << _valeur;
 }
 
 void constante::afficherPolonaise(ostream &reference){
-    reference<<endl;
+    reference << _valeur;
 }
 
 float constante::calculer(){

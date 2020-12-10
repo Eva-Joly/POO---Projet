@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     txt->setText(os.str().c_str());
     txt->show();
 
-    MainWindow w;
-    w.show();
+   // MainWindow w;
+    //w.show();
     return a.exec();
 }

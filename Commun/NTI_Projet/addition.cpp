@@ -16,15 +16,16 @@ addition::addition(expression *x, expression *y){
 void addition::afficherClassique(ostream &reference){
 
     _opG->afficherClassique(reference);
-    reference<< "+" <<endl;
+    reference<< "+";
     _opD->afficherClassique(reference);
 }
 
 void addition::afficherPolonaise(ostream &reference){
 
     _opG->afficherClassique(reference);
+    reference<< " ";
     _opD->afficherClassique(reference);
-    reference<< "+" <<endl;
+    reference<< " +" <<endl;
 }
 
 float addition::calculer(){
