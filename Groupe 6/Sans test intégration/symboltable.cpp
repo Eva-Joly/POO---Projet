@@ -54,7 +54,7 @@ bool SymbolTable::addVariable(const variable &toAdd)
     return true;
 }
 
-bool SymbolTable::editVariable(const variable &toEdit)
+bool SymbolTable::editVariable(variable &toEdit)
 {
     if(symbolExists(toEdit.getTitle()))
     {
@@ -67,7 +67,7 @@ bool SymbolTable::editVariable(const variable &toEdit)
     return false;
 }
 
-bool SymbolTable::setVariable(const variable &toSet)
+bool SymbolTable::setVariable(variable &toSet)
 {
     if(symbolExists(toSet.getTitle()))
         return editVariable(toSet);
@@ -77,7 +77,8 @@ bool SymbolTable::setVariable(const variable &toSet)
 
 bool SymbolTable::setVariable(const QString name, const float value)
 {
-    return setVariable(variable(name, value));
+    variable v(name, value);
+    return setVariable(v);
 }
 
 bool SymbolTable::deleteVariable(const QString &name)

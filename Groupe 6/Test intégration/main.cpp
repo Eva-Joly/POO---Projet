@@ -96,13 +96,13 @@ int main(int argc, char *argv[])
     //FIN TEST SYMBOLES
 
     // TEST INTEGRATION GRAPHEUR 2D
-
+/*
     grapheur2dModel* graph2dModele = new grapheur2dModel(); // Définition du modèle à afficher dans le grapheur2d
     grapheur2dView* graph2dView = new grapheur2dView(graph2dModele); // Définition de la vue à qui permet d'afficher le modèle
     grapheur2dController* graph2dController = new grapheur2dController(graph2dModele); // Controller permettant de faire évoluer le modèle et l'affichage dans le temps
-
+*/
     MainWindow w; // On crée une fenêtre
-    w.setCentralWidget(graph2dView); // On défini le grapheur2d comme widget principal de la fenêtre
+    //w.setCentralWidget(graph2dView); // On défini le grapheur2d comme widget principal de la fenêtre
     w.show(); // On affiche la fenêtre
 
     // FIN TEST INTEGRATION GRAPHEUR 2D

@@ -14,17 +14,7 @@ variable::variable(QString title)
     _isSet = false;
 }
 
-variable::variable(QString title, float value): _title(title), _value(value), _isSet(true)
-{
-
-}
-
-variable::~variable()
-{
-
-}
-
-float variable::calculer() const
+float variable::calculer()
 {
     if(!_isSet) // Si la variable n'a pas de valeur définie, le calcul est impossible
     {
@@ -65,9 +55,4 @@ void variable::deleteValue()
 float variable::getValue()
 {
     return _value;
-}
-
-QString variable::getTitle() const
-{
-    return _title;
 }

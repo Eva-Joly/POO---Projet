@@ -16,7 +16,7 @@ public:
     variable(QString title, float value);
     virtual ~variable();
 
-    float calculer() const;
+    float calculer();
 	void afficherClassique(ostream &reference);
 	void afficherPolonaise(ostream &reference);
 	void setTitle(QString title);

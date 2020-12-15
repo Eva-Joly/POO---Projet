@@ -29,10 +29,10 @@ public:
 
     //Edits a Variable with the same name than the given variable, to its value.
     //'toEdit' variable is not edited, and only serves as a model.
-    bool editVariable(const variable &toEdit);
+    bool editVariable(variable &toEdit);
 
     //Choose between addVariable() or editVariable()
-    bool setVariable(const variable &toSet);
+    bool setVariable(variable &toSet);
     bool setVariable(const QString name, const float value);
 
     //Delete a Variable from list
